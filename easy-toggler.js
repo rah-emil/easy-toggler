@@ -1,5 +1,5 @@
 /**
- * EasyToggler 1.0.0
+ * EasyToggler 1.0.5
  * Simple class switcher on web elements. JavaScript only.
  * GitHub: https://github.com/rah-emil/easy-toggler
  *
@@ -26,9 +26,6 @@
             let ey_class = EY_BTN.getAttribute('data-easy-class');
 
             document.querySelector(ey_target).classList.toggle(ey_class);
-
-            console.log(EY_BTN);
-            console.log(ey_class);
         }
 
         if( !EY_BTN )
@@ -39,7 +36,15 @@
                 let ey_rcoe_block = ey_rcoe_block_target.getAttribute('data-easy-toggle'),
                     ey_rcoe_block_class = ey_rcoe_block_target.getAttribute('data-easy-class');
                 
-                    document.querySelector(ey_rcoe_block).classList.remove(ey_rcoe_block_class);
+                    try
+                    {
+                        document.querySelector(ey_rcoe_block).classList.remove(ey_rcoe_block_class);
+                    }
+                    catch (ey_error)
+                    {
+                        console.warn('EasyToggler.js : Блок ' + ey_rcoe_block + ' не существует');
+                    }
+
             });
         }
 
