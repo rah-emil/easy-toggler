@@ -1,0 +1,64 @@
+@import "../libs/bootstrap-5.0.0-alpha1-dist/css/bootstrap-reboot.min.css";
+@import "../libs/bootstrap-5.0.0-alpha1-dist/css/bootstrap-grid.min.css";
+
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 300px;
+	padding: 20px 0;
+	background-color: #5c72f2;
+	color: #fff;
+	line-height: 1.6;
+}
+
+h1{
+	font-weight: bold;
+}
+
+
+main{
+	padding-bottom: 60px;
+}
+
+.btn-accent{
+	display: inline-block;
+	padding: 12px 32px;
+	background-color: #3600bd;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all .09s ease-in-out;
+	-o-transition: all .09s ease-in-out;
+	transition: all .09s ease-in-out;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.btn-accent:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #2c009a;
+}
+
+.title{
+	margin-bottom: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.text-muted{
+	font-size: 20px;
+	color: grey;
+}
