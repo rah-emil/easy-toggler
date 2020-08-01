@@ -13,13 +13,13 @@ When you click the button, the class ```show``` will be added to ```<nav id="mai
 <button data-easy-toggle="#main_menu" data-easy-class="show">Menu</button>
 
 <nav id="main_menu">
-	<ul>
-		<li><a>Home</a></li>
-		<li><a>About us</a></li>
-		<li><a>Services</a></li>
-		<li><a>Portfolio</a></li>
-		<li><a>Contact us</a></li>
-	</ul>
+    <ul>
+        <li><a>Home</a></li>
+        <li><a>About us</a></li>
+        <li><a>Services</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Contact us</a></li>
+    </ul>
 </nav>
 ```
 

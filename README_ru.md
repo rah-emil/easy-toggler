@@ -13,13 +13,13 @@
 <button data-easy-toggle="#main_menu" data-easy-class="show">Меню</button>
 
 <nav id="main_menu">
-	<ul>
-		<li><a>Главная</a></li>
-		<li><a>О компании</a></li>
-		<li><a>Услуги</a></li>
-		<li><a>Портфолио</a></li>
-		<li><a>Контакты</a></li>
-	</ul>
+    <ul>
+        <li><a>Главная</a></li>
+        <li><a>О компании</a></li>
+        <li><a>Услуги</a></li>
+        <li><a>Портфолио</a></li>
+        <li><a>Контакты</a></li>
+    </ul>
 </nav>
 ```
 
