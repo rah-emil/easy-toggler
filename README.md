@@ -5,7 +5,7 @@ Simple class switcher on web elements. JavaScript only.
 Incluse JavaScript file **easy-toggler.min.js** OR **easy-toggler.js** before  ```</body>```.
 
 ### How to use?
-#### [Watch demo](https://rah-emil.github.io/easy-toggler/ "Watch demo")
+#### [Watch demo](https://rah-emil.ru/easy-toggler/ "Watch demo")
 
 **Example №1:**
 When you click the button, the class ```show``` will be added to ```<nav id="main_menu">```

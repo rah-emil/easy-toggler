@@ -2,10 +2,10 @@
 Простой переключатель классов на веб-элементах. Только JavaScript.
 
 ### Как подключить?
-Подключите JavaScript файл **easy-toggler.min.js** или **easy-toggler.js** перед тегом ```</body>```.
+Подключите JavaScript файл **easy-toggler.min.js** или **easy-toggler.js** перед закрывающим тегом ```</body>```.
 
 ### Как использовать?
-#### [Смотреть демо](https://rah-emil.github.io/easy-toggler/ "Смотреть демо")
+#### [Смотреть демо](https://rah-emil.ru/easy-toggler/ "Смотреть демо")
 
 **Практический пример №1:**
 При нажатии на кнопку, блоку ```<nav id="main_menu">``` добавится класс ```show```
