@@ -1,5 +1,5 @@
 /**
- * EasyToggler 1.1.0
+ * EasyToggler 1.2.0
  * Simple class switcher on web elements. JavaScript only.
  * GitHub: https://github.com/rah-emil/easy-toggler
  *
@@ -8,7 +8,7 @@
  * Released under the MIT License
  *
  * Released: July 21, 2020
- * Latest updates: August 01, 2020
+ * Latest updates: July 21, 2021
  */
 
 (function() {
@@ -38,6 +38,12 @@
 
             try
             {
+                document.querySelectorAll('[data-easy-toggle]').forEach(easyBlock => {
+                    if(!easyBlock.hasAttribute('data-easy-parallel') && easyBlock !== EY_BTN){
+                        document.querySelector(easyBlock.getAttribute('data-easy-toggle')).classList.remove(easyBlock.getAttribute('data-easy-class'));
+                    }
+                });
+
                 document.querySelector(ey_target).classList.toggle(ey_class);
             }
             catch (ey_error)

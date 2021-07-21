@@ -47,4 +47,5 @@ When you click the button, the class  ```open``` will be added to ```<div id="ca
 - **data-easy-toggle** - specify the target element
 - **data-easy-class** - specifying the class for the target element
 - **data-easy-rcoe** - indicate whether it is necessary to delete the class if another is pressed
+- **data-easy-parallel** - so that elements can open parallel to each other
 
