@@ -2,7 +2,7 @@
 Simple class switcher on web elements. JavaScript only.
 
 ### Introduction
-Incluse JavaScript file **easy-toggler.min.js** OR **easy-toggler.js** before  ```</body>```.
+Include JavaScript file **dist/easy-toggler.umd.min.js** OR **dist/easy-toggler.js**.
 
 ### How to use?
 #### [Watch demo](https://rah-emil.ru/easy-toggler/ "Watch demo")
