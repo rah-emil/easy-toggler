@@ -3,6 +3,8 @@
  * Copyright 2022 Rah Emil <013131@mail.ru>
  * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
  */
+'use strict';
+
 const toggle = ($toggler, attrs) => {
   $toggler._target = $toggler.el.getAttribute(attrs.toggle);
   $toggler._class = $toggler.el.getAttribute(attrs.class);
@@ -119,5 +121,5 @@ const easySetup = params => {
   document.addEventListener('click', e => easyTogglerHandler(e, customAttrs));
 };
 
-export { easySetup as default };
-//# sourceMappingURL=easy-toggler.es.js.map
+module.exports = easySetup;
+//# sourceMappingURL=easy-toggler.cjs.map

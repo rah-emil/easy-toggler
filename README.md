@@ -1,13 +1,44 @@
 # EasyToggler.js 🔗🚀
 Simple class switcher on web elements. JavaScript only.
 
-### Introduction
-Include JavaScript file **dist/easy-toggler.umd.min.js** OR **dist/easy-toggler.js**.
+## Import EasyToggler
+### ES
+```html
+<script type="module">
+  import easySetup from "easy-toggler";
 
-### How to use?
-#### [Watch demo](https://rah-emil.ru/easy-toggler/ "Watch demo")
+  easySetup({
+      toggle: 'easy-toggle',
+      remove: 'easy-remove',
+      add: 'easy-add',
+      class: 'easy-class',
+      rcoe: 'easy-rcoe',
+      parallel: 'easy-parallel',
+  });
+</script>
+```
 
-**Example №1:**
+### UMD (+ jsDelivr)
+```html
+<script src="https://www.jsdelivr.com/package/npm/easy-toggler/dist/easy-toggler.min.js"></script>
+```
+### CJS
+```html
+<script type="module">
+  const easySetup = require("easy-toggler.cjs");
+
+  easySetup({
+      toggle: 'easy-toggle',
+      remove: 'easy-remove',
+      add: 'easy-add',
+      class: 'easy-class',
+      rcoe: 'easy-rcoe',
+      parallel: 'easy-parallel',
+  });
+</script>
+```
+
+## Example №1
 When you click the button, the class ```show``` will be added to ```<nav id="main_menu">```
 ```html
 <button data-easy-toggle="#main_menu" data-easy-class="show">Menu</button>
@@ -23,8 +54,7 @@ When you click the button, the class ```show``` will be added to ```<nav id="mai
 </nav>
 ```
 
-
-**Example №2:**
+## Example №2
 When you click the button, the class  ```open``` will be added to ```<div id="categories" class="dropdown-menu">```. When clicking outside the element area, class ```open``` will be deleted from ```<div id="categories" class="dropdown-menu">```, since we specified the  ```data-easy-rcoe``` attribute for the link.
 ```html
 <div class="dropdown">
@@ -43,9 +73,10 @@ When you click the button, the class  ```open``` will be added to ```<div id="ca
 **EasyToggler.js** only allows you to conveniently manage the element classes. CSS styles (behavior of elements with certain classes) must be specified independently.
 
 #### Specificity of attributes
-
-- **data-easy-toggle** - specify the target element
-- **data-easy-class** - specifying the class for the target element
-- **data-easy-rcoe** - indicate whether it is necessary to delete the class if another is pressed
-- **data-easy-parallel** - so that elements can open parallel to each other
+- **easy-toggle** - toggle class for target element
+- **easy-add** - add class for target element
+- **easy-remove** - remove class for target element
+- **easy-class** - specifying the class for the target element
+- **easy-rcoe** - indicate whether it is necessary to delete the class if another is pressed
+- **easy-parallel** - so that elements can open parallel to each other
 
