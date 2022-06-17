@@ -20,7 +20,7 @@ Simple class switcher on web elements. JavaScript only.
 
 ### UMD (+ jsDelivr)
 ```html
-<script src="https://www.jsdelivr.com/package/npm/easy-toggler/dist/easy-toggler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.0.0/dist/easy-toggler.min.js"></script>
 ```
 ### CJS
 ```html
