@@ -1,4 +1,11 @@
 # EasyToggler.js 🔗🚀
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCj5-dlnKYZ7O2HIYgP8urqw?style=flat)
+![GitHub](https://img.shields.io/github/license/rah-emil/easy-toggler)
+![GitHub all releases](https://img.shields.io/github/downloads/rah-emil/easy-toggler/total)
+![GitHub issues](https://img.shields.io/github/issues/rah-emil/easy-toggler)
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/rah-emil/easy-toggler)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/rah-emil/easy-toggler)
+
 Simple class switcher on web elements. JavaScript only.
 
 ## Import EasyToggler
@@ -14,13 +21,14 @@ Simple class switcher on web elements. JavaScript only.
       class: 'easy-class',
       rcoe: 'easy-rcoe',
       parallel: 'easy-parallel',
+      self: 'easy-self'
   });
 </script>
 ```
 
 ### UMD (+ jsDelivr)
 ```html
-<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.0.0/dist/easy-toggler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.1.0/dist/easy-toggler.min.js"></script>
 ```
 ### CJS
 ```html
@@ -34,6 +42,7 @@ Simple class switcher on web elements. JavaScript only.
       class: 'easy-class',
       rcoe: 'easy-rcoe',
       parallel: 'easy-parallel',
+      self: 'easy-self'
   });
 </script>
 ```
@@ -79,4 +88,5 @@ When you click the button, the class  ```open``` will be added to ```<div id="ca
 - **easy-class** - specifying the class for the target element
 - **easy-rcoe** - indicate whether it is necessary to delete the class if another is pressed
 - **easy-parallel** - so that elements can open parallel to each other
+- **easy-self** - add a class to the clicked button
 

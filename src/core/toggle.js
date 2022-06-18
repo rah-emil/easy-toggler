@@ -1,19 +1,22 @@
 const toggle = ($toggler, attrs) => {
-    $toggler._target = $toggler.el.getAttribute(attrs.toggle);
-    $toggler._class = $toggler.el.getAttribute(attrs.class);
+    const _target = $toggler.getAttribute(attrs.toggle);
 
-    try {
-        document.querySelectorAll(`[${ attrs.toggle }]`).forEach((easyBlock) => {
-            if(!easyBlock.hasAttribute(attrs.parallel) && easyBlock !== $toggler.el){
-                document.querySelector(easyBlock.getAttribute(attrs.toggle)).classList.remove(easyBlock.getAttribute(attrs.class));
+    document.querySelectorAll(`[${ attrs.toggle }]`).forEach((easyBlock) => {
+        if(!easyBlock.hasAttribute(attrs.parallel) && easyBlock !== $toggler){
+            document.querySelector(easyBlock.getAttribute(attrs.toggle)).classList.remove(easyBlock.getAttribute(attrs.class));
+
+            const _selfClass = $toggler.getAttribute(attrs.self);
+            if(_selfClass) {
+                $toggler.classList.remove(_selfClass);
             }
+        }
+    });
 
-            // document.querySelector(easyBlock.getAttribute(attrs.toggle)).classList.remove(easyBlock.getAttribute(attrs.class));
-        });
+    document.querySelector(_target)?.classList.toggle($toggler.getAttribute(attrs.class));
 
-        document.querySelector($toggler._target).classList.toggle($toggler._class);
-    } catch (ey_error) {
-        console.warn(`easyToggler | not found '${ $toggler._target }'`);
+    const _selfClass = $toggler.getAttribute(attrs.self);
+    if(_selfClass) {
+        $toggler.classList.toggle(_selfClass);
     }
 }
 

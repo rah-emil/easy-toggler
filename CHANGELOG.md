@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.1.0 (2022-06-18)
+**Closed issues:**
+- Delete log in core/index.js #4
+- Дополнительный функционал #2 (self-easy)
+
+**Implemented enhancements:**
+- code refactoring
+
 ## 2.0.0 (2022-06-16)
 **Closed issues:**
 - fix "Don't work remove class after added data-easy-parallel #3"

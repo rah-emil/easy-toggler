@@ -1,13 +1,14 @@
 const add = ($add, attrs) => {
-    $add._target = $add.el.getAttribute(attrs.add);
-    $add._class = $add.el.getAttribute(attrs.class);
+    const _target = $add.getAttribute(attrs.add);
+    const _class = $add.getAttribute(attrs.class);
 
-    try {
-        document.querySelectorAll($add._target).forEach((easyBlock) => {
-            easyBlock.classList.add($add._class);
-        });
-    } catch (ey_error) {
-        console.warn(`easyToggler | not found '${ $add._target }' for add class`);
+    document.querySelectorAll(_target).forEach((easyBlock) => {
+        easyBlock.classList.add(_class);
+    });
+
+    const _selfClass = $add.getAttribute(attrs.self);
+    if(_selfClass) {
+        $add.classList.add(_selfClass);
     }
 }
 

@@ -5,6 +5,7 @@ const attrsDefault = {
     class: 'easy-class',
     rcoe: 'easy-rcoe',
     parallel: 'easy-parallel',
+    self: 'easy-self'
 }
 
 export default attrsDefault;
