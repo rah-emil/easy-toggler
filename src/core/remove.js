@@ -1,4 +1,6 @@
 const remove = ($remove, attrs) => {
+    attrs.onRemove($remove);
+
     const _target = $remove.getAttribute(attrs.remove);
     const _class = $remove.getAttribute(attrs.class);
 

@@ -1,4 +1,6 @@
 const add = ($add, attrs) => {
+    attrs.onAdd($add);
+    
     const _target = $add.getAttribute(attrs.add);
     const _class = $add.getAttribute(attrs.class);
 

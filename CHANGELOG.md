@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2.2.0 (2022-07-15)
+**Closed issues:**
+- easy-self don't work with easy-rcoe attribute #5
+
+**Bugfix:**
+- fix error with attrsDefault for easy-toggler.es 
+
+**Implemented enhancements:**
+- Feature suggestion! Add hooks #6 (new hooks: `onToggle($el)`, `onAdd($el)`, `onRemove($el)`, `onRcoe($el)`)
+
 ## 2.1.0 (2022-06-18)
 **Closed issues:**
 - Delete log in core/index.js #4

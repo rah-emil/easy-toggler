@@ -7,8 +7,10 @@ import attrsDefault from './core/attrs';
  * @param params<Object>
  */
 const easySetup = (params) => {
-    const customAttrs = {attrsDefault, ...params};
-    document.addEventListener('click', (e) => easyTogglerHandler(e, customAttrs));
+    const customAttrs = { ...attrsDefault, ...params };
+    document.addEventListener('click', (e) => {
+        easyTogglerHandler(e, customAttrs);
+    });
 };
 
 export default easySetup;

@@ -29,7 +29,7 @@ function testDom() {
         <button id="showModal" easy-add="#modal_1" easy-class="show" easy-rcoe>Modal show!</button>
 
         <div id="modal_1">
-            <button id="closeModal" easy-remove="#modal_1" easy-class="show">Close modal</button>
+            <button id="closeModal" data-easy-remove="#modal_1" easy-class="show">Close modal</button>
             <div>
                 <h3>Modal window</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis, earum cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat maxime fugiat eos ipsa. Consectetur, aperiam dignissimos!</p>
@@ -51,6 +51,16 @@ function testDom() {
         </button>
 
         <div id="dropdownSelf">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+        </div>
+
+        <button id="btnSelfRcoe" easy-toggle="#dropdownSelfRcoe" easy-class="active-menu" easy-rcoe easy-self="btn-active" easy-self-rcoe>
+            Button with self & rcoe
+        </button>
+
+        <div id="dropdownSelfRcoe">
             <a href="#">Item 1</a>
             <a href="#">Item 2</a>
             <a href="#">Item 3</a>

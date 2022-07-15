@@ -6,14 +6,10 @@ import testDom from './test-dom';
 import easySetup from '../dist/easy-toggler.es';
 
 easySetup({
-    toggle: 'easy-toggle',
-    remove: 'easy-remove',
-    add: 'easy-add',
-    class: 'easy-class',
-    rcoe: 'easy-rcoe',
-    parallel: 'easy-parallel',
-    self: 'easy-self',
-    selfRcoe: 'easy-self-rcoe',
+    remove: 'data-easy-remove',
+    onRemove($el) {
+        console.log('remove hook!', $el.id);
+    }
 });
 
 beforeAll(() => {
@@ -65,4 +61,11 @@ test('test easy-self after click other button', () => {
     const btnSelf = document.getElementById('btnSelf');
     document.getElementById('dropdown').click();
     expect(btnSelf.classList.contains('btn-active')).toBe(false);
+});
+
+test('test easy-self-rcoe after click other button', () => {
+    const btnSelfRcoe = document.getElementById('btnSelfRcoe');
+    btnSelfRcoe.click();
+    document.getElementById('dropdown').click();
+    expect(btnSelfRcoe.classList.contains('btn-active')).toBe(false);
 });

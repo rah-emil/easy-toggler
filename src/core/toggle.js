@@ -1,4 +1,6 @@
 const toggle = ($toggler, attrs) => {
+    attrs.onToggle($toggler);
+
     const _target = $toggler.getAttribute(attrs.toggle);
 
     document.querySelectorAll(`[${ attrs.toggle }]`).forEach((easyBlock) => {
