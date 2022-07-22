@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 2.2.1 (2022-07-22)
+## 2.2.2 (2022-07-22)
 create gh-actions for auto publish to npm (and check functional)
 
 ## 2.2.0 (2022-07-15)

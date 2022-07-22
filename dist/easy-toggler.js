@@ -1,5 +1,5 @@
 /*!
- * EasyToggler v2.2.1 (https://github.com/rah-emil/easy-toggler#readme)
+ * EasyToggler v2.2.2 (https://github.com/rah-emil/easy-toggler#readme)
  * Copyright 2022 Rah Emil <013131@mail.ru>
  * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
  */
