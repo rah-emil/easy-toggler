@@ -1,7 +1,6 @@
 # Dependency directories
 node_modules
 coverage/
-package-lock.json
 *.vim
 
 # Yarn Integrity file
