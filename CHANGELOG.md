@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2.2.1 (2022-07-22)
+create gh-actions for auto publish to npm (and check functional)
+
 ## 2.2.0 (2022-07-15)
 **Closed issues:**
 - easy-self don't work with easy-rcoe attribute #5
