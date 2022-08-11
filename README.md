@@ -4,7 +4,7 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/rah-emil/easy-toggler/total)
 ![GitHub issues](https://img.shields.io/github/issues/rah-emil/easy-toggler)
 ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/rah-emil/easy-toggler)
-![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/rah-emil/easy-toggler)
+[![](https://data.jsdelivr.com/v1/package/npm/easy-toggler/badge?style=rounded)](https://www.jsdelivr.com/package/npm/easy-toggler)
 
 Simple class switcher on web elements. JavaScript only.
 
