@@ -1,16 +1,16 @@
 {
   "name": "easy-toggler",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Simple class switcher on web elements. JavaScript only.",
   "main": "dist/easy-toggler.cjs",
-  "module": "dist/easy-toggler.es.js",
-  "jsdelivr": "dist/easy-toggler.umd.min.js",
-  "umd:main": "dist/easy-toggler.umd.js",
-  "cdn": "dist/easy-toggler.umd.min.js",
+  "module": "dist/easy-toggler.js",
+  "jsdelivr": "dist/easy-toggler.iife.min.js",
+  "umd:main": "dist/easy-toggler.iife.js",
+  "cdn": "dist/easy-toggler.iife.min.js",
   "scripts": {
     "test": "jest",
     "cover": "jest --coverage",
-    "lint": "eslint src/easy-toggler.es.js src/easy-toggler.umd.js",
+    "lint": "eslint src/easy-toggler.js src/easy-toggler.iife.js",
     "build": "rollup --config --sourcemap"
   },
   "repository": {
