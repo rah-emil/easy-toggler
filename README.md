@@ -8,6 +8,23 @@
 
 Simple class switcher on web elements. JavaScript only.
 
+![](readme/mem.png)
+
+## Use a plugin instead of JavaScript
+```html
+<!-- js: menu.classList.toggle('active') -->
+<button easy-toggle="#target" easy-class="active">Toggle class</button>
+
+<!-- js: menu.classList.add('active') -->
+<button easy-add="#target" easy-class="active">Add class</button>
+
+<!-- js: menu.classList.remove('active') -->
+<button easy-remove="#target" easy-class="active">Remove class</button>
+
+<!-- js: menu.classList.toggle('active') + work with e.closest() -->
+<button easy-toggle="#target" easy-class="active" easy-rcoe>Removing a class if we click on an empty space</button>
+```
+
 ## Import EasyToggler
 ### ES
 ```html
@@ -37,7 +54,6 @@ or easier:
 ```html
 <script type="module">
   import easySetup from "easy-toggler";
-
   easySetup();
 </script>
 ```
@@ -49,7 +65,7 @@ or easier:
 ### CJS
 ```html
 <script type="module">
-  const easySetup = require("easy-toggler.cjs");
+  const easySetup = require("easy-toggler");
 
   easySetup({
     // html attrs
@@ -73,13 +89,15 @@ or easier:
 or easier:
 ```html
 <script type="module">
-  import easySetup from "easy-toggler";
-
+  const easySetup = require("easy-toggler");
   easySetup();
 </script>
 ```
 
-## Example №1
+## Demo
+Visit demo page: [rah-emil.ru/easy-toggler](https://rah-emil.ru/easy-toggler)
+
+### Example №1
 When you click the button, the class ```show``` will be added to ```<nav id="main_menu">```
 ```html
 <button easy-toggle="#main_menu" easy-class="show">Menu</button>
@@ -95,7 +113,7 @@ When you click the button, the class ```show``` will be added to ```<nav id="mai
 </nav>
 ```
 
-## Example №2
+### Example №2
 When you click the button, the class  ```open``` will be added to ```<div id="categories" class="dropdown-menu">```. When clicking outside the element area, class ```open``` will be deleted from ```<div id="categories" class="dropdown-menu">```, since we specified the  ```easy-rcoe``` attribute for the link.
 ```html
 <div class="dropdown">
@@ -129,6 +147,3 @@ When you click the button, the class  ```open``` will be added to ```<div id="ca
 - **onAdd($el)** - hook before add action
 - **onRemove($el)** - hook before remove action
 - **onRcoe($el)** - hook before rcoe action
-
-## Contributing
-The author will be grateful to all developers for any suggestions to improve the plugin. Fork and submit pull requests. Thank you!
