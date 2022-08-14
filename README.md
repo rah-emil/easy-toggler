@@ -60,7 +60,7 @@ or easier:
 
 ### CDN jsDelivr
 ```html
-<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.3/dist/easy-toggler.iife.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.3"></script>
 ```
 ### CJS
 ```html
