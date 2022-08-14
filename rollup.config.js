@@ -17,42 +17,40 @@ function getHeader() {
  */`;
 }
 
-const pathCore = path.join(__dirname, 'src/easy-toggler.es.js');
-const pathCoreUmd = path.join(__dirname, 'src/easy-toggler.umd.js');
+const pathCore = path.join(__dirname, 'src/easy-toggler.js');
+const pathCoreIife = path.join(__dirname, 'src/easy-toggler.iife.js');
 
 const bundles = [
     {
         input: pathCore,
         output: {
             banner: getHeader(),
-            file: path.join(__dirname, 'dist/easy-toggler.es.js'),
-            format: 'esm',
+            file: path.join(__dirname, 'dist/easy-toggler.js'),
+            format: 'es',
         },
     },
     {
         input: pathCore,
         output: {
             banner: getHeader(),
-            file: path.join(__dirname, 'dist/easy-toggler.es.min.js'),
-            format: 'esm',
-        },
-    },
-    {
-        input: pathCoreUmd,
-        output: {
-            banner: getHeader(),
-            name: 'easy-toggler',
-            file: path.join(__dirname, 'dist/easy-toggler.js'),
-            format: 'umd',
-        },
-    },
-    {
-        input: pathCoreUmd,
-        output: {
-            banner: getHeader(),
-            name: 'easy-toggler',
             file: path.join(__dirname, 'dist/easy-toggler.min.js'),
-            format: 'umd',
+            format: 'es',
+        },
+    },
+    {
+        input: pathCoreIife,
+        output: {
+            banner: getHeader(),
+            file: path.join(__dirname, 'dist/easy-toggler.iife.js'),
+            format: 'iife',
+        },
+    },
+    {
+        input: pathCoreIife,
+        output: {
+            banner: getHeader(),
+            file: path.join(__dirname, 'dist/easy-toggler.iife.min.js'),
+            format: 'iife',
         },
     },
     {

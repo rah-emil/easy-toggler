@@ -3,7 +3,7 @@
  * @jest-environment-options {"url": "https://jestjs.io/"}
  */
 import testDom from './test-dom';
-import easySetup from '../dist/easy-toggler.es';
+import easySetup from '../dist/easy-toggler';
 
 easySetup({
     remove: 'data-easy-remove',
