@@ -12,16 +12,16 @@ Simple class switcher on web elements. JavaScript only.
 
 ## Use a plugin instead of JavaScript
 ```html
-<!-- js: btn.classList.toggle('active') -->
+<!-- js: menu.classList.toggle('active') -->
 <button easy-toggle="#target" easy-class="active">Toggle class</button>
 
-<!-- js: btn.classList.add('active') -->
+<!-- js: menu.classList.add('active') -->
 <button easy-add="#target" easy-class="active">Add class</button>
 
-<!-- js: btn.classList.remove('active') -->
+<!-- js: menu.classList.remove('active') -->
 <button easy-remove="#target" easy-class="active">Remove class</button>
 
-<!-- js: btn.classList.toggle('active') + work with e.closest() -->
+<!-- js: menu.classList.toggle('active') + work with e.closest() -->
 <button easy-toggle="#target" easy-class="active" easy-rcoe>Removing a class if we click on an empty space</button>
 ```
 
