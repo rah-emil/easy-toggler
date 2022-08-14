@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.2.3 (2022-08-14)
+### Fixes
+- update docs #11 
+- update rollup config #12 
+
 ## 2.2.2 (2022-07-22)
 create gh-actions for auto publish to npm (and check functional)
 
