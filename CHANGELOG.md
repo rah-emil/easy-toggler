@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.6 - 2022-08-17
+
+### Fixes
+
+- fix .npmignore
+
 ## 2.2.5 - 2022-08-17
 
 ### Fixes
