@@ -7,8 +7,14 @@ module.exports = {
     env: {
         browser: true,
     },
-    extends: ['standard', 'prettier'],
-    plugins: ['prettier'],
+    extends: [
+        'eslint-config-standard',
+        'eslint-config-prettier'
+    ],
+    plugins: [
+        'eslint-plugin-prettier',
+        'eslint-plugin-standard'
+    ],
     rules: {
         'prettier/prettier': ['warn', {
             'singleQuote': true
