@@ -1,6 +1,6 @@
 {
   "name": "easy-toggler",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Simple class switcher on web elements. JavaScript only.",
   "main": "dist/easy-toggler.cjs",
   "module": "dist/easy-toggler.js",
