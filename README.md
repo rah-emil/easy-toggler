@@ -143,7 +143,7 @@ When you click the button, the class  ```open``` will be added to ```<div id="ca
 
 
 ## Hooks
-- **onToggle($el)** - hook before toggle action
-- **onAdd($el)** - hook before add action
-- **onRemove($el)** - hook before remove action
-- **onRcoe($el)** - hook before rcoe action
+- **onToggle($el)** - hook after action toggle
+- **onAdd($el)** - hook after action add
+- **onRemove($el)** - hook after action remove
+- **onRcoe($el)** - hook after action rcoe
