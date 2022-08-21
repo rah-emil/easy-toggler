@@ -1,9 +1,10 @@
 # EasyToggler.js 🔗🚀
+![npm bundle size](https://img.shields.io/bundlephobia/min/easy-toggler)
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCj5-dlnKYZ7O2HIYgP8urqw?style=flat)
+[![](https://data.jsdelivr.com/v1/package/npm/easy-toggler/badge?style=rounded)](https://www.jsdelivr.com/package/npm/easy-toggler)
+![npm](https://img.shields.io/npm/dm/easy-toggler)
 ![GitHub](https://img.shields.io/github/license/rah-emil/easy-toggler)
 ![GitHub issues](https://img.shields.io/github/issues/rah-emil/easy-toggler)
-![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/rah-emil/easy-toggler)
-[![](https://data.jsdelivr.com/v1/package/npm/easy-toggler/badge?style=rounded)](https://www.jsdelivr.com/package/npm/easy-toggler)
 
 Simple class switcher on web elements. JavaScript only.
 
@@ -11,16 +12,16 @@ Simple class switcher on web elements. JavaScript only.
 
 ## Use a plugin instead of JavaScript
 ```html
-<!-- js: menu.classList.toggle('active') -->
+<!-- instead of js: menu.classList.toggle('active') -->
 <button easy-toggle="#target" easy-class="active">Toggle class</button>
 
-<!-- js: menu.classList.add('active') -->
+<!-- instead of js: menu.classList.add('active') -->
 <button easy-add="#target" easy-class="active">Add class</button>
 
-<!-- js: menu.classList.remove('active') -->
+<!-- instead of js: menu.classList.remove('active') -->
 <button easy-remove="#target" easy-class="active">Remove class</button>
 
-<!-- js: menu.classList.toggle('active') + work with e.closest() -->
+<!-- instead of js: menu.classList.toggle('active') + work with e.closest() -->
 <button easy-toggle="#target" easy-class="active" easy-rcoe>Removing a class if we click on an empty space</button>
 ```
 
@@ -57,9 +58,9 @@ or easier:
 </script>
 ```
 
-### CDN jsDelivr
+### CDN jsDelivr (iife)
 ```html
-<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
 ```
 ### CJS
 ```html
