@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.7 - 2022-08-21
+
+### Fixes
+
+- Fix issue (feature) #13
+
 ## 2.2.6 - 2022-08-17
 
 ### Fixes
