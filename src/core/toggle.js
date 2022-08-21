@@ -1,6 +1,4 @@
 const toggle = ($toggler, attrs) => {
-    attrs.onToggle($toggler);
-
     const _target = $toggler.getAttribute(attrs.toggle);
 
     document.querySelectorAll(`[${ attrs.toggle }]`).forEach((easyBlock) => {
@@ -20,6 +18,8 @@ const toggle = ($toggler, attrs) => {
     if(_selfClass) {
         $toggler.classList.toggle(_selfClass);
     }
+
+    attrs.onToggle($toggler);
 }
 
 export default toggle;

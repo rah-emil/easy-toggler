@@ -1,6 +1,4 @@
 const add = ($add, attrs) => {
-    attrs.onAdd($add);
-    
     const _target = $add.getAttribute(attrs.add);
     const _class = $add.getAttribute(attrs.class);
 
@@ -12,6 +10,8 @@ const add = ($add, attrs) => {
     if(_selfClass) {
         $add.classList.add(_selfClass);
     }
+
+    attrs.onAdd($add);
 }
 
 export default add;
