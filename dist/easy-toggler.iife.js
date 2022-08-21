@@ -1,5 +1,5 @@
 /*!
- * EasyToggler v2.2.3 (https://github.com/rah-emil/easy-toggler#readme)
+ * EasyToggler v2.2.7 (https://github.com/rah-emil/easy-toggler#readme)
  * Copyright 2022 Rah Emil <013131@mail.ru>
  * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
  */
@@ -7,8 +7,6 @@
     'use strict';
 
     const toggle = ($toggler, attrs) => {
-      attrs.onToggle($toggler);
-
       const _target = $toggler.getAttribute(attrs.toggle);
 
       document.querySelectorAll(`[${attrs.toggle}]`).forEach(easyBlock => {
@@ -29,11 +27,11 @@
       if (_selfClass) {
         $toggler.classList.toggle(_selfClass);
       }
+
+      attrs.onToggle($toggler);
     };
 
     const add = ($add, attrs) => {
-      attrs.onAdd($add);
-
       const _target = $add.getAttribute(attrs.add);
 
       const _class = $add.getAttribute(attrs.class);
@@ -47,11 +45,11 @@
       if (_selfClass) {
         $add.classList.add(_selfClass);
       }
+
+      attrs.onAdd($add);
     };
 
     const remove = ($remove, attrs) => {
-      attrs.onRemove($remove);
-
       const _target = $remove.getAttribute(attrs.remove);
 
       const _class = $remove.getAttribute(attrs.class);
@@ -65,6 +63,8 @@
       if (_selfClass) {
         $remove.classList.remove(_selfClass);
       }
+
+      attrs.onRemove($remove);
     };
 
     const rcoes = (e, attrs) => {
@@ -74,7 +74,6 @@
         let block_class = $rcoe.getAttribute(attrs.class);
 
         if (!e.target.closest(block)) {
-          attrs.onRcoe($rcoe);
           document.querySelector(block)?.classList.remove(block_class);
 
           const _selfClass = $rcoe.getAttribute(attrs.self);
@@ -82,6 +81,8 @@
           if (_selfClass) {
             $rcoe.classList.remove(_selfClass);
           }
+
+          attrs.onRcoe($rcoe);
         }
       });
     };
