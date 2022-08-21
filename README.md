@@ -1,7 +1,6 @@
 # EasyToggler.js 🔗🚀
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCj5-dlnKYZ7O2HIYgP8urqw?style=flat)
 ![GitHub](https://img.shields.io/github/license/rah-emil/easy-toggler)
-![GitHub all releases](https://img.shields.io/github/downloads/rah-emil/easy-toggler/total)
 ![GitHub issues](https://img.shields.io/github/issues/rah-emil/easy-toggler)
 ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/rah-emil/easy-toggler)
 [![](https://data.jsdelivr.com/v1/package/npm/easy-toggler/badge?style=rounded)](https://www.jsdelivr.com/package/npm/easy-toggler)
